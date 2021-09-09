@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>snake game</title>
@@ -9,13 +9,13 @@ i<!DOCTYPE html>
   }
 
   body {
-    background: black;
+    background:black;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   canvas {
-    border: 1px solid blue;
+    border: 1px solid yellow;
   }
   </style>
 </head>
@@ -96,12 +96,12 @@ function loop() {
   // draw apple
 
 
-  context.fillStyle = 'pink';
+  context.fillStyle = 'red';
 
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // draw snake one cell at a time
-  context.fillStyle = 'blue';
+  context.fillStyle = 'green';
   snake.cells.forEach(function(cell, index) {
     
     // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
